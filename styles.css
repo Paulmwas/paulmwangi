@@ -131,7 +131,14 @@ main{
         padding-top: 100px;
         font-size: 40px;
     }
-    .overlay p{
+    .navbar{
+        background: #240750;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+        .overlay p{
         top: 50%;
         color:#FF9F66;
         font-weight: 200;
@@ -140,7 +147,6 @@ main{
         text-align: left;
         padding-left: 10%;
         padding-right: 10%;
-    
         
     }
     main{

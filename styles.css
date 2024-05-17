@@ -156,6 +156,15 @@ main{
         background-color: #344C64;
     
     }
+    .navbar ul{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        padding-left: 50px;
+        align-items: center;
+        padding-bottom: 20px;
+        list-style: none;
+    }    
     .homepage>h1{
         padding-top: 1%;
         margin-bottom: 0%;

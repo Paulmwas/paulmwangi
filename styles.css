@@ -208,11 +208,14 @@ main{
     }
     .portfolio{
         padding-top: 50px;
+        height: 100vh;
+        width: 100%;
     }
     .portfolio>h1{
         color: #240750;
         font-size: 2px;
         padding-top: 10%;
+        
     }
     .contact{
         display: flex;

@@ -150,7 +150,7 @@ main{
         
     }
     main{
-        height: 700px;
+        height: 100vh;
         width: 100%;
         animation: changebg 5s ease-in forwards infinite;
         background-size: cover;

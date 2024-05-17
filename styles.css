@@ -193,13 +193,14 @@ main{
     .cointainer3{
         display: grid;
         gap: 10px;
-        grid-template-rows: auto auto;
-        padding-left: 100px;
+        grid-template-columns: auto;
+        padding-left: 80px;
         padding-top: 1%;
+        
     }
     .projects img{
-        width: 600px;
-        height: 400px;
+        width: 200px;
+        height: 300px;
     }
     .projects>h4{
         color: white;
@@ -213,6 +214,144 @@ main{
         font-size: 2px;
         padding-top: 10%;
     }
+    .contact{
+        display: flex;
+        /* grid-template-columns: auto; */
+        align-items: center;
+        gap: 3rem;
+        padding-left: 30px;
+        
+        color: #240750;
+        background-color: #001b29;
+        height: 100vh;
+        width: 100%;
+      }
+      .contact-text{
+        flex-direction: column;
+      }
+      .contact-text h2{
+        font-size: 20px;
+        line-height: 1;
+        
+        padding-top: 20px;
+      }
+      .contact-text h2 span{
+        color: #0ef;
+      }
+      .contact-text h4{
+        margin: 15px;
+        color: rgb(228,228,228);
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .contact-text p{
+        color: rgb(177,177,177);
+        font-size: 10px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+      }
+      .contact-list{
+        margin-bottom: 3rem;
+      }
+      .contact-list{
+        margin-bottom: 10px;
+        display: block;
+        color: #FF5F00;
+        list-style: georgian;
+      }
+      .contact-list i{
+        display: inline-block;
+        color: #0ef;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all .40s ease;
+      }
+      .contact-list li a:hover{
+        transform: scale(1.01) translateY(-5px);
+        color: #0ef;
+      }
+      .contact-icons i{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #0ef;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #0ef;
+        text-decoration: none;
+        margin: 30px 15px 30px 0;
+        transition: .5s ease;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: calc(.2s*var(--1));
+      }
+      .contact-icons i:hover{
+       background: #0ef;
+       color: #000;
+       box-shadow: 0 0 20px #0ef ;
+      }
+      .contact-form form{
+        position: relative;
+      }
+      .contact-form form input,form textarea{
+        border: none;
+        outline: none;
+        width: 90%;
+        padding: 18px;
+        background: #555557;
+        color: #000;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        border-radius: 0.5rem;
+      }
+      .contact-form textarea{
+        resize: none;
+        height: 220px;
+      }
+      .contact-form form .send{
+        display: inline-block;
+        padding: 14px 60px;
+        background: #0ef;
+        border-radius: 40px;
+        font-size: 18px;
+        color: #001b29;
+        list-style: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideTop 1s ease forwards;
+        animation-delay: 2s;
+        box-shadow: 0 0 5px #0ef 0 0 25px #0ef;
+      }
+      .contact-form form .send:hover{
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan,0 0 50px cyan,
+        0 0 100px cyan, 0 0 200 cyan ;
+      }
+      .last-text p{
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+        background: rgb(7,85,95);
+        font-weight: 300;
+        
+      }
+      .top{
+        position: fixed;
+        bottom: 2.1rem;
+        right: 2.1rem;
+      }
+      .top i{
+        color: #000;
+        background: #0ef;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 0.5rem;
+      }
 }
 .skills{
     height: 100vh;
@@ -262,6 +401,7 @@ main{
     grid-template-columns: 1fr 1fr;
     padding-left: 100px;
     padding-top: 1%;
+    padding-bottom: 3%;
 }
 .projects img{
     width: 600px;
